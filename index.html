@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
+  <title>Germany Top It</title>
 
   <!-- 🔥 Tab logo -->
   <link rel="icon" href="Your-paragraph-text.png">
@@ -10,109 +10,8 @@
     body {
       margin: 0;
       font-family: Arial;
-      background: url("background.jpg") no-repeat center center/cover;
+      background: url(4k-new-york.jpg) no-repeat center center/cover;
     }
 
-    .overlay {
-      background: rgba(0,0,0,0.6);
-      min-height: 100vh;
-      text-align: center;
-      color: white;
-      padding: 20px;
-    }
 
-    /* Logo + name */
-    .header img {
-      width: 90px;
-      border-radius: 50%;
-      margin-top: 20px;
-    }
-
-    .header h2 {
-      margin: 10px 0;
-    }
-
-    /* Categories */
-    .menu {
-      margin-top: 20px;
-    }
-
-    .menu button {
-      padding: 10px 15px;
-      margin: 5px;
-      border: 1px solid white;
-      background: transparent;
-      color: white;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    .menu button:hover {
-      background: white;
-      color: black;
-    }
-
-    /* Content box */
-    .box {
-      display: none;
-      background: white;
-      color: black;
-      width: 280px;
-      margin: 20px auto;
-      padding: 10px;
-      border-radius: 10px;
-    }
-  </style>
-</head>
-
-<body>
-
-<div class="overlay">
-
-  <!-- 🔥 Logo + Name -->
-  <div class="header">
-    <img src="Your-paragraph-text.png">
-    <h2>My Website Name</h2>
-  </div>
-
-  <!-- 🔥 Categories -->
-  <div class="menu">
-    <button onclick="show('social')">Social</button>
-    <button onclick="show('female')">Female</button>
-    <button onclick="show('tiktok')">TikTok</button>
-    <button onclick="show('all')">All</button>
-  </div>
-
-  <!-- 🔥 Content -->
-  <div id="social" class="box">
-    <p>Social Account 1</p>
-    <p>Social Account 2</p>
-  </div>
-
-  <div id="female" class="box">
-    <p>Female Account 1</p>
-    <p>Female Account 2</p>
-  </div>
-
-  <div id="tiktok" class="box">
-    <p>TikTok Account 1</p>
-    <p>TikTok Account 2</p>
-  </div>
-
-</div>
-
-<script>
-function show(id){
-  let boxes = document.querySelectorAll(".box");
-
-  if(id === "all"){
-    boxes.forEach(b => b.style.display = "block");
-  } else {
-    boxes.forEach(b => b.style.display = "none");
-    document.getElementById(id).style.display = "block";
-  }
-}
-</script>
-
-</body>
-</html>
+ 
