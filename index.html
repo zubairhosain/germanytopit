@@ -1,60 +1,75 @@
-<head><!DOCTYPE html><html>
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
 <head>
-<title>Germany Top IT</title>
-</head><body style="
-margin:0;
-background-image:url('4k-new-york.jpg');
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-font-family:Arial,sans-serif;
-"><!-- LOGO --><div style="text-align:center;padding-top:30px;"><img src="Your-paragraph-text.png"
-width="120"
-height="120"
-style="
-border-radius:50%;
-object-fit:cover;
-border:3px solid white;
-">
+  <title>My Website</title>
 
-<h1 style="
-color:white;
-margin-top:15px;
-font-weight:bold;
-">
-Germany Top IT
-</h1></div><!-- Verified USA Accounts for Business Growth --><div style="
-background:white;
-color:black;
-text-align:center;
-font-weight:bold;
-font-size:22px;
-padding:15px;
-margin:20px;
-border-radius:8px;
-">Verified USA Accounts for Business Growth
+  <style>
+    .menu {
+      background: #f2f2f2;
+      padding: 10px;
+    }
 
-</div><!-- MENU BAR --><div style="
-background:white;
-color:black;
-text-align:center;
-font-weight:bold;
-font-size:18px;
-padding:15px;
-margin:20px;
-border-radius:8px;
-">  
-Bank Accounts    |   
-Crypto Accounts    |   
-Social Media Accounts    |   
-Email Addresses   |  
- 
- Review     |
+    .menu a {
+      margin-right: 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: blue;
+      cursor: pointer;
+    }
 
-</div></body><h2>Social Media Accounts</h2>
+    .box {
+      display: none;
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
 
-<a href="facebook.html">Facebook</a>
-<a href="tiktok.html">TikTok</a>
-<a href="instagram.html">Instagram</a>
+<body>
+
+<h1>My Website</h1>
+
+<!-- 🔥 Social Media Category -->
+<h2 onclick="showMenu()">Social Media Accounts (Click)</h2>
+
+<div class="menu" id="menu">
+  <a onclick="show('facebook')">Facebook</a>
+  <a onclick="show('instagram')">Instagram</a>
+  <a onclick="show('tiktok')">TikTok</a>
+</div>
+
+<!-- 🔥 Content -->
+<div id="facebook" class="box">
+  <h3>Facebook Article</h3>
+  <p>Facebook সম্পর্কে লেখা এখানে থাকবে</p>
+</div>
+
+<div id="instagram" class="box">
+  <h3>Instagram Article</h3>
+  <p>Instagram সম্পর্কে লেখা এখানে থাকবে</p>
+</div>
+
+<div id="tiktok" class="box">
+  <h3>TikTok Article</h3>
+  <p>TikTok সম্পর্কে লেখা এখানে থাকবে</p>
+</div>
+
+<script>
+function showMenu() {
+  document.getElementById("menu").style.display = "block";
+}
+
+function show(id) {
+  let boxes = document.querySelectorAll(".box");
+
+  boxes.forEach(box => {
+    box.style.display = "none";
+  });
+
+  document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
 </html>
