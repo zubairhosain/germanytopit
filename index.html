@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zubair Website</title>
+<title>Website</title>
 
 <!-- FAVICON -->
 <link rel="icon" type="image/png" href="Your-paragraph-text.png">
@@ -12,59 +12,36 @@
 body{
     margin:0;
     font-family:Arial;
-    color:white;
+    color:#fff;
+
+    /* BACKGROUND */
     background:url("4k-new-york.jpg") no-repeat center center fixed;
     background-size:cover;
 }
 
-/* OVERLAY */
+/* DARK OVERLAY */
 .overlay{
     min-height:100vh;
     background:rgba(0,0,0,0.55);
 }
 
-/* HEADER */
+/* HEADER (ONLY LOGO) */
 .header{
     display:flex;
-    justify-content:space-between;
+    justify-content:flex-start;
     align-items:center;
-    padding:15px 40px;
-    border-bottom:2px solid white;
+    padding:18px 40px;
+    border-bottom:2px solid rgba(255,255,255,0.8);
+    backdrop-filter:blur(6px);
 }
 
-.logo{
-    border:1px solid white;
-    padding:6px 10px;
-    font-weight:bold;
+.logo img{
+    width:42px;
+    height:42px;
+    border-radius:6px;
 }
 
-.title{
-    font-size:20px;
-    font-weight:bold;
-}
-
-/* MENU */
-.menu{
-    display:flex;
-    gap:12px;
-    padding:12px 40px;
-    border-bottom:1px solid white;
-    flex-wrap:wrap;
-}
-
-.menu a{
-    color:white;
-    text-decoration:none;
-    border:1px solid white;
-    padding:6px 12px;
-}
-
-.menu a:hover{
-    background:white;
-    color:black;
-}
-
-/* HERO */
+/* HERO IMAGE */
 .hero{
     text-align:center;
     margin-top:25px;
@@ -73,26 +50,32 @@ body{
 .hero img{
     width:280px;
     border:2px solid white;
-    border-radius:8px;
+    border-radius:10px;
 }
 
-/* CONTENT */
-.content{
+/* CONTENT BOX */
+.container{
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+    gap:22px;
     padding:30px 40px;
 }
 
-.box{
-    border:1px solid white;
-    padding:15px;
-    background:rgba(0,0,0,0.4);
-    border-radius:6px;
+.card{
+    border:1px solid rgba(255,255,255,0.7);
+    padding:18px;
+    background:rgba(0,0,0,0.35);
+    border-radius:10px;
+    transition:0.3s;
 }
 
-.box h3{
-    border-bottom:1px solid white;
+.card:hover{
+    transform:translateY(-5px);
+    background:rgba(0,0,0,0.55);
+}
+
+.card h3{
+    border-bottom:1px solid rgba(255,255,255,0.6);
     padding-bottom:6px;
 }
 
@@ -100,62 +83,5 @@ body{
 .footer{
     text-align:center;
     padding:15px;
-    border-top:1px solid white;
-    margin-top:20px;
-}
-</style>
-</head>
-
-<body>
-
-<div class="overlay">
-
-    <div class="header">
-        <div class="logo">ZB</div>
-        <div class="title">Zubair Office Website</div>
-    </div>
-
-    <div class="menu">
-        <a href="#">Home</a>
-        <a href="#">iPhone</a>
-        <a href="#">Social Media</a>
-        <a href="#">Bank</a>
-        <a href="#">Email</a>
-    </div>
-
-    <div class="hero">
-        <img src="Your-paragraph-text.png" alt="post">
-    </div>
-
-    <div class="content">
-
-        <div class="box">
-            <h3>iPhone Posts</h3>
-            <p>Latest iPhone content</p>
-        </div>
-
-        <div class="box">
-            <h3>Social Media</h3>
-            <p>Facebook, Instagram, TikTok</p>
-        </div>
-
-        <div class="box">
-            <h3>Bank Accounts</h3>
-            <p>All bank info here</p>
-        </div>
-
-        <div class="box">
-            <h3>Email</h3>
-            <p>example@gmail.com</p>
-        </div>
-
-    </div>
-
-    <div class="footer">
-        © 2026 Zubair Website
-    </div>
-
-</div>
-
-</body>
-</html>
+    border-top:1px solid rgba(255,255,255,0.6);
+    margin-top
