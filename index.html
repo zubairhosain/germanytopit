@@ -1,101 +1,310 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Website</title>
-
-<link rel="icon" href="Your-paragraph-text.png">
+<title>Germany Top It</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
 body{
-    margin:0;
-    font-family:Arial;
-    color:white;
-    background:url("4k-new-york.jpg") no-repeat center center fixed;
-    background-size:cover;
+background:#000;
+color:white;
 }
 
-.overlay{
-    min-height:100vh;
-    background:rgba(0,0,0,0.55);
+.top-bar{
+background:#0066cc;
+padding:10px 50px;
+display:flex;
+justify-content:flex-end;
+gap:30px;
+font-size:14px;
 }
 
-/* HEADER */
-.header{
-    display:flex;
-    align-items:center;
-    padding:15px 30px;
-    border-bottom:2px solid white;
+.navbar{
+background:#fff;
+height:85px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 60px;
 }
 
-.logo img{
-    width:45px;
-    height:45px;
-    border-radius:6px;
-    display:block;
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
 }
 
-/* HERO */
+.logo-area img{
+width:55px;
+height:55px;
+object-fit:contain;
+}
+
+.logo-area h2{
+color:#111;
+font-size:28px;
+font-weight:bold;
+}
+
+.menu{
+display:flex;
+gap:35px;
+}
+
+.menu a{
+text-decoration:none;
+color:#111;
+font-weight:600;
+transition:.3s;
+}
+
+.menu a:hover{
+color:#0066cc;
+}
+
 .hero{
-    text-align:center;
-    margin-top:25px;
+height:700px;
+background:
+linear-gradient(rgba(0,80,180,.75),rgba(0,80,180,.75)),
+url('4k-new-york.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 90px;
 }
 
-.hero img{
-    width:250px;
-    border:2px solid white;
-    border-radius:10px;
+.hero-text{
+width:50%;
 }
 
-/* CARDS */
-.container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
-    padding:30px;
+.hero-text h1{
+font-size:65px;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:18px;
+line-height:1.8;
+max-width:700px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#ff00aa;
+color:#fff;
+padding:15px 35px;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+.counter{
+margin-top:40px;
+display:flex;
+gap:15px;
+}
+
+.box{
+background:rgba(255,255,255,.15);
+padding:20px;
+width:120px;
+text-align:center;
+border-radius:8px;
+backdrop-filter:blur(5px);
+}
+
+.box h3{
+font-size:32px;
+}
+
+.hero-image{
+width:40%;
+text-align:center;
+}
+
+.hero-image img{
+width:100%;
+max-width:500px;
+}
+
+.services{
+background:#fff;
+color:#111;
+padding:80px 30px;
+text-align:center;
+}
+
+.services h2{
+font-size:45px;
+margin-bottom:40px;
+color:#0066cc;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+max-width:1200px;
+margin:auto;
 }
 
 .card{
-    border:1px solid white;
-    padding:15px;
-    background:rgba(0,0,0,0.4);
+padding:25px;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+footer{
+background:#111;
+padding:25px;
+text-align:center;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+height:auto;
+padding:60px 25px;
+}
+
+.hero-text,
+.hero-image{
+width:100%;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:45px;
+}
+
+.counter{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.service-grid{
+grid-template-columns:1fr;
+}
+
+.navbar{
+flex-direction:column;
+height:auto;
+padding:20px;
+}
+
+.menu{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
 }
 </style>
 </head>
-
 <body>
 
-<div class="overlay">
+<div class="top-bar">
+<span>Telegram: Germany Top It</span>
+<span>Email: germanytopit@gmail.com</span>
+</div>
 
-    <!-- LOGO -->
-    <div class="header">
-        <div class="logo">
-            <img src="Your-paragraph-text.png" alt="logo">
-        </div>
-    </div>
+<nav class="navbar">
 
-    <!-- IMAGE -->
-    <div class="hero">
-        <img src="Your-paragraph-text.png" alt="post">
-    </div>
+<div class="logo-area">
+<img src="Your-paragraph-text.png" alt="">
+<h2>Germany Top It</h2>
+</div>
 
-    <!-- CONTENT -->
-    <div class="container">
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Bank Accounts</a>
+<a href="#">Crypto Accounts</a>
+<a href="#">Social Accounts</a>
+<a href="#">Shop</a>
+</div>
 
-        <div class="card">
-            <h3>Bank Accounts</h3>
-            <p>Info here</p>
-        </div>
+</nav>
 
-        <div class="card">
-            <h3>Social Media</h3>
-            <p>Info here</p>
-        </div>
+<section class="hero">
 
-    </div>
+<div class="hero-text">
+
+<h1>Welcome To Germany Top It</h1>
+
+<p>
+Need verified social accounts, bank accounts, crypto accounts
+and digital services? Germany Top It provides secure and trusted
+online account solutions for customers worldwide.
+</p>
+
+<button class="btn">VISIT SHOP</button>
+
+<div class="counter">
+
+<div class="box">
+<h3 id="days">237</h3>
+<p>Days</p>
+</div>
+
+<div class="box">
+<h3 id="hours">01</h3>
+<p>Hours</p>
+</div>
+
+<div class="box">
+<h3 id="minutes">48</h3>
+<p>Minutes</p>
+</div>
+
+<div class="box">
+<h3 id="seconds">37</h3>
+<p>Seconds</p>
+</div>
 
 </div>
 
-</body>
-</html>
+</div>
+
+<div class="hero-image">
+<img src="Your-paragraph-text.png" alt="">
+</div>
+
+</section>
+
+<section class="services">
+
+<h2>Our Services</h2>
+
+<div class="service-grid">
+
+<div class="card">
+<h3>Bank Accounts</h3>
+<p>Verified banking solutions.</p>
+</div>
+
+<div class="card">
+<h3>Crypto Accounts</h3>
+<p>Trusted crypto account services.</p>
+</div>
+
+<div class="card">
+<h3>Social Accounts</h3>
+<p>High-quality social media accounts.</p>
+</div>
