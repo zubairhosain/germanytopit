@@ -24,9 +24,9 @@ color:#fff;
 .top-bar{
 background:#0066cc;
 display:flex;
-justify-content:flex-end;
-gap:25px;
-padding:12px 80px;
+justify-content:flex-start;
+gap:30px;
+padding:12px 100px; /* more spacing */
 font-size:14px;
 }
 
@@ -36,13 +36,15 @@ background:#fff;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:12px 80px;
+padding:12px 100px;
 }
 
+/* LOGO AREA (MORE RIGHT) */
 .logo-area{
 display:flex;
 align-items:center;
 gap:12px;
+margin-left:90px; /* 👉 logo more right */
 }
 
 .logo-area img{
@@ -57,34 +59,35 @@ font-size:24px;
 font-weight:bold;
 }
 
+/* MENU (SHIFTED RIGHT FROM CENTER) */
 .menu{
 display:flex;
-gap:25px;
+gap:28px;
+margin-left:auto;
+margin-right:80px;
 }
 
 .menu a{
 text-decoration:none;
 color:#111;
 font-weight:600;
+transition:0.3s;
 }
 
 .menu a:hover{
 color:#0066cc;
 }
 
-/* HERO (FULL FIXED HEIGHT + NO CUT ISSUE) */
+/* HERO */
 .hero{
-min-height:100vh;   /* 🔥 FULL SCREEN FIX */
-width:100%;
+min-height:100vh;
 position:relative;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 padding:60px 20px;
-
-/* FULL COVER IMAGE FIX */
-background:url('4k-new-york.jpg') center center / cover no-repeat;
+background:url('4k-new-york.jpg') center/cover no-repeat;
 }
 
 /* BLUE OVERLAY */
@@ -92,10 +95,9 @@ background:url('4k-new-york.jpg') center center / cover no-repeat;
 content:"";
 position:absolute;
 inset:0;
-background:rgba(0, 80, 180, 0.55);
+background:rgba(0,80,180,0.55);
 }
 
-/* CONTENT */
 .hero-content{
 position:relative;
 z-index:2;
@@ -105,13 +107,11 @@ max-width:800px;
 .hero h1{
 font-size:55px;
 margin-bottom:15px;
-color:#fff;
 }
 
 .hero p{
 font-size:18px;
 margin-bottom:20px;
-color:#fff;
 }
 
 .btn{
@@ -121,6 +121,11 @@ background:#ff00aa;
 color:#fff;
 border-radius:6px;
 cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
 }
 
 /* RESPONSIVE */
@@ -128,58 +133,3 @@ cursor:pointer;
 
 .navbar{
 flex-direction:column;
-gap:15px;
-padding:15px 20px;
-}
-
-.menu{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.top-bar{
-justify-content:center;
-padding:10px 20px;
-}
-
-.hero h1{
-font-size:35px;
-}
-}
-</style>
-</head>
-
-<body>
-
-<div class="top-bar">
-<span>Telegram: @GermanyTopIt</span>
-<span>Email: germanytopit@gmail.com</span>
-</div>
-
-<nav class="navbar">
-
-<div class="logo-area">
-<img src="Your-paragraph-text.png" alt="">
-<h2>Germany Top It</h2>
-</div>
-
-<div class="menu">
-<a href="#">Home</a>
-<a href="#">Bank Accounts</a>
-<a href="#">Crypto Accounts</a>
-<a href="#">Social Accounts</a>
-<a href="#">Shop</a>
-</div>
-
-</nav>
-
-<section class="hero">
-<div class="hero-content">
-<h1>Welcome To Germany Top It</h1>
-<p>Secure digital services worldwide with trusted support and verified accounts.</p>
-<button class="btn">VISIT SHOP</button>
-</div>
-</section>
-
-</body>
-</html>
