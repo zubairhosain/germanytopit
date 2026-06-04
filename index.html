@@ -36,14 +36,15 @@ background:#fff;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:15px 40px;
+padding:12px 50px;
 }
 
-/* LOGO */
+/* LOGO (slightly RIGHT) */
 .logo-area{
 display:flex;
 align-items:center;
 gap:12px;
+margin-left:15px; /* 👉 একটু ডানদিকে */
 }
 
 .logo-area img{
@@ -57,10 +58,11 @@ color:#111;
 font-size:24px;
 }
 
-/* MENU */
+/* MENU (slightly LEFT balance) */
 .menu{
 display:flex;
 gap:25px;
+margin-right:20px; /* 👉 একটু বামদিকে টান */
 }
 
 .menu a{
@@ -75,12 +77,13 @@ color:#0066cc;
 
 /* HERO */
 .hero{
-min-height:600px;
+min-height:650px;
 background:
-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
 url('4k-new-york.jpg');
 background-size:cover;
 background-position:center;
+background-repeat:no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -89,7 +92,7 @@ padding:60px 20px;
 }
 
 .hero h1{
-font-size:45px;
+font-size:50px;
 margin-bottom:15px;
 }
 
@@ -111,6 +114,7 @@ cursor:pointer;
 
 /* RESPONSIVE */
 @media(max-width:768px){
+
 .navbar{
 flex-direction:column;
 gap:15px;
@@ -119,6 +123,10 @@ gap:15px;
 .menu{
 flex-wrap:wrap;
 justify-content:center;
+}
+
+.hero h1{
+font-size:35px;
 }
 }
 </style>
@@ -151,7 +159,7 @@ justify-content:center;
 <section class="hero">
 <div>
 <h1>Welcome To Germany Top It</h1>
-<p>Secure digital services worldwide including accounts and online solutions.</p>
+<p>Secure digital services worldwide with trusted support.</p>
 <button class="btn">VISIT SHOP</button>
 </div>
 </section>
