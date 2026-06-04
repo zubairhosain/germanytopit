@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Germany Top It</title>
 
-<link rel="icon" type="image/png" href="Your-paragraph-text.png">
+<link rel="icon" href="Your-paragraph-text.png">
 
 <style>
 *{
@@ -20,11 +20,11 @@ background:#000;
 color:#fff;
 }
 
-/* TOP BAR */
+/* TOP BAR (LEFT SIDE FIX) */
 .top-bar{
 background:#0066cc;
 display:flex;
-justify-content:flex-end;
+justify-content:flex-start; /* 👉 LEFT SIDE */
 gap:25px;
 padding:10px 40px;
 font-size:14px;
@@ -36,15 +36,15 @@ background:#fff;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:12px 50px;
+padding:12px 60px;
 }
 
-/* LOGO (slightly RIGHT) */
+/* LOGO (MORE RIGHT) */
 .logo-area{
 display:flex;
 align-items:center;
 gap:12px;
-margin-left:15px; /* 👉 একটু ডানদিকে */
+margin-left:60px; /* 👉 আরও ডানদিকে */
 }
 
 .logo-area img{
@@ -56,13 +56,14 @@ object-fit:contain;
 .logo-area h2{
 color:#111;
 font-size:24px;
+font-weight:bold;
 }
 
-/* MENU (slightly LEFT balance) */
+/* MENU (MORE LEFT) */
 .menu{
 display:flex;
 gap:25px;
-margin-right:20px; /* 👉 একটু বামদিকে টান */
+margin-right:80px; /* 👉 আরও বামদিকে */
 }
 
 .menu a{
@@ -75,15 +76,12 @@ font-weight:600;
 color:#0066cc;
 }
 
-/* HERO */
+/* HERO (FULL BACKGROUND FIX) */
 .hero{
-min-height:650px;
+min-height:100vh; /* 👉 FULL SCREEN FIX */
 background:
 linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-url('4k-new-york.jpg');
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
+url('4k-new-york.jpg') center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -92,7 +90,7 @@ padding:60px 20px;
 }
 
 .hero h1{
-font-size:50px;
+font-size:55px;
 margin-bottom:15px;
 }
 
@@ -123,22 +121,30 @@ gap:15px;
 .menu{
 flex-wrap:wrap;
 justify-content:center;
+margin-right:0;
+}
+
+.logo-area{
+margin-left:0;
 }
 
 .hero h1{
 font-size:35px;
 }
+
 }
 </style>
 </head>
 
 <body>
 
+<!-- TOP BAR -->
 <div class="top-bar">
 <span>Telegram: @GermanyTopIt</span>
 <span>Email: germanytopit@gmail.com</span>
 </div>
 
+<!-- NAVBAR -->
 <nav class="navbar">
 
 <div class="logo-area">
@@ -156,6 +162,7 @@ font-size:35px;
 
 </nav>
 
+<!-- HERO -->
 <section class="hero">
 <div>
 <h1>Welcome To Germany Top It</h1>
