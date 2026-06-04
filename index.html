@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Germany Top It</title>
 
-<!-- ✅ FAVICON ADDED -->
 <link rel="icon" type="image/png" href="favicon.png">
 
 <style>
@@ -42,21 +41,39 @@ padding:0 60px;
 .logo-area{
 display:flex;
 align-items:center;
-gap:15px;
 }
 
-.logo-area img{
-width:55px;
-height:55px;
+.logo-box{
+position:relative;
+width:70px;
+height:70px;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-right:10px;
+}
+
+.logo-box img{
+width:70px;
+height:70px;
 object-fit:contain;
 }
 
-.logo-area h2{
+.logo-box span{
+position:absolute;
+font-size:10px;
+font-weight:bold;
+color:#fff;
+text-shadow:0 0 6px rgba(0,0,0,0.9);
+}
+
+.logo-text{
 color:#111;
 font-size:28px;
 font-weight:bold;
 }
 
+/* MENU */
 .menu{
 display:flex;
 gap:35px;
@@ -66,7 +83,6 @@ gap:35px;
 text-decoration:none;
 color:#111;
 font-weight:600;
-transition:.3s;
 }
 
 .menu a:hover{
@@ -125,58 +141,13 @@ padding:20px;
 width:120px;
 text-align:center;
 border-radius:8px;
-backdrop-filter:blur(5px);
-}
-
-.box h3{
-font-size:32px;
-}
-
-.hero-image{
-width:40%;
-text-align:center;
-}
-
-.hero-image img{
-width:100%;
-max-width:500px;
-}
-
-.services{
-background:#fff;
-color:#111;
-padding:80px 30px;
-text-align:center;
-}
-
-.services h2{
-font-size:45px;
-margin-bottom:40px;
-color:#0066cc;
-}
-
-.service-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-max-width:1200px;
-margin:auto;
-}
-
-.card{
-padding:25px;
-border:1px solid #ddd;
-border-radius:10px;
-}
-
-.card h3{
-margin-bottom:10px;
 }
 
 footer{
 background:#111;
 padding:25px;
 text-align:center;
+font-weight:bold;
 }
 
 @media(max-width:900px){
@@ -187,23 +158,15 @@ height:auto;
 padding:60px 25px;
 }
 
-.hero-text,
-.hero-image{
+.hero-text{
 width:100%;
 text-align:center;
 }
 
-.hero-text h1{
-font-size:45px;
-}
-
-.counter{
-justify-content:center;
+.menu{
 flex-wrap:wrap;
-}
-
-.service-grid{
-grid-template-columns:1fr;
+justify-content:center;
+margin-top:10px;
 }
 
 .navbar{
@@ -212,28 +175,30 @@ height:auto;
 padding:20px;
 }
 
-.menu{
-margin-top:15px;
-flex-wrap:wrap;
-justify-content:center;
-}
-
 }
 </style>
 </head>
 
 <body>
 
+<!-- TOP BAR -->
 <div class="top-bar">
 <span>Telegram: @GermanyTopIt</span>
 <span>Email: germanytopit@gmail.com</span>
 </div>
 
+<!-- NAVBAR -->
 <nav class="navbar">
 
 <div class="logo-area">
-<img src="Your-paragraph-text.png" alt="">
-<h2>Germany Top It</h2>
+
+<div class="logo-box">
+<img src="https://smmpvaexpert.com/wp-content/uploads/2025/07/ChatGPT_Image_Jul_29202504_45_08_PM-removebg-preview.png" alt="Logo">
+<span>Germany Top It</span>
+</div>
+
+<div class="logo-text">Germany Top It</div>
+
 </div>
 
 <div class="menu">
@@ -246,6 +211,7 @@ justify-content:center;
 
 </nav>
 
+<!-- HERO -->
 <section class="hero">
 
 <div class="hero-text">
@@ -253,9 +219,7 @@ justify-content:center;
 <h1>Welcome To Germany Top It</h1>
 
 <p>
-Need verified social accounts, bank accounts, crypto accounts
-and digital services? Germany Top It provides secure and trusted
-online account solutions for customers worldwide.
+Need verified social, bank, and crypto accounts with secure service worldwide.
 </p>
 
 <button class="btn">VISIT SHOP</button>
@@ -263,47 +227,10 @@ online account solutions for customers worldwide.
 <div class="counter">
 
 <div class="box">
-<h3 id="days">237</h3>
+<h3>237</h3>
 <p>Days</p>
 </div>
 
 <div class="box">
-<h3 id="hours">01</h3>
-<p>Hours</p>
-</div>
-
-<div class="box">
-<h3 id="minutes">48</h3>
-<p>Minutes</p>
-</div>
-
-<div class="box">
-<h3 id="seconds">37</h3>
-<p>Seconds</p>
-</div>
-
-</div>
-
-</div>
-
-<div class="hero-image">
-<img src="Your-paragraph-text.png" alt="">
-</div>
-
-</section>
-
-<section class="services">
-
-<h2>Our Services</h2>
-
-<div class="service-grid">
-
-<div class="card">
-<h3>Bank Accounts</h3>
-<p>Verified banking solutions.</p>
-</div>
-
-<div class="card">
-<h3>Crypto Accounts</h3>
-<p>Trusted crypto account services.</p>
-</div>
+<h3>01</h3>
+<p>Hours</
