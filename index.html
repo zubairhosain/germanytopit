@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Germany Top It</title>
 
-<!-- ✅ FAVICON (FIXED) -->
+<!-- ✅ FIXED FAVICON (USING YOUR IMAGE) -->
 <link rel="icon" type="image/png" href="Your-paragraph-text.png">
 <link rel="shortcut icon" href="Your-paragraph-text.png" type="image/png">
 
@@ -22,7 +26,6 @@ background:#000;
 color:white;
 }
 
-/* TOP BAR */
 .top-bar{
 background:#0066cc;
 padding:10px 50px;
@@ -32,7 +35,6 @@ gap:30px;
 font-size:14px;
 }
 
-/* NAVBAR */
 .navbar{
 background:#fff;
 height:85px;
@@ -69,15 +71,15 @@ gap:35px;
 text-decoration:none;
 color:#111;
 font-weight:600;
+transition:.3s;
 }
 
 .menu a:hover{
 color:#0066cc;
 }
 
-/* HERO */
 .hero{
-height:650px;
+height:700px;
 background:
 linear-gradient(rgba(0,80,180,.75),rgba(0,80,180,.75)),
 url('4k-new-york.jpg');
@@ -85,70 +87,123 @@ background-size:cover;
 background-position:center;
 display:flex;
 align-items:center;
-justify-content:center;
-text-align:center;
-padding:0 40px;
+justify-content:space-between;
+padding:0 90px;
 }
 
-.hero h1{
-font-size:55px;
+.hero-text{
+width:50%;
+}
+
+.hero-text h1{
+font-size:65px;
+font-weight:bold;
 margin-bottom:20px;
 }
 
-.hero p{
+.hero-text p{
 font-size:18px;
+line-height:1.8;
 max-width:700px;
-margin:auto;
-margin-bottom:20px;
+margin-bottom:30px;
 }
 
 .btn{
 background:#ff00aa;
 color:#fff;
-padding:12px 30px;
+padding:15px 35px;
 border:none;
 border-radius:8px;
 font-size:18px;
 cursor:pointer;
 }
 
-/* REVIEWS */
-.testimonials{
-background:#111;
-padding:60px 30px;
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
+.counter{
+margin-top:40px;
+display:flex;
+gap:15px;
+}
+
+.box{
+background:rgba(255,255,255,.15);
+padding:20px;
+width:120px;
+text-align:center;
+border-radius:8px;
+backdrop-filter:blur(5px);
+}
+
+.box h3{
+font-size:32px;
+}
+
+.hero-image{
+width:40%;
 text-align:center;
 }
 
-.review{
-background:#1c1c1c;
+.hero-image img{
+width:100%;
+max-width:500px;
+}
+
+.services{
+background:#fff;
+color:#111;
+padding:80px 30px;
+text-align:center;
+}
+
+.services h2{
+font-size:45px;
+margin-bottom:40px;
+color:#0066cc;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
 padding:25px;
+border:1px solid #ddd;
 border-radius:10px;
 }
 
-.review p{
-color:#ddd;
-margin-bottom:10px;
+footer{
+background:#111;
+padding:25px;
+text-align:center;
 }
 
-.review h4{
-color:#fff;
-}
-
-.review span{
-color:#aaa;
-font-size:13px;
-}
-
-
-
-/* RESPONSIVE */
 @media(max-width:900px){
 
-.testimonials,
-.footer-container{
+.hero{
+flex-direction:column;
+height:auto;
+padding:60px 25px;
+}
+
+.hero-text,
+.hero-image{
+width:100%;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:45px;
+}
+
+.counter{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.service-grid{
 grid-template-columns:1fr;
 }
 
@@ -159,83 +214,26 @@ padding:20px;
 }
 
 .menu{
+margin-top:15px;
 flex-wrap:wrap;
 justify-content:center;
-margin-top:10px;
 }
 
-.hero h1{
-font-size:40px;
-}
-<footer>
-
-<div class="footer-container">
-
-<!-- ABOUT -->
-<div>
-<h3>About Us</h3>
-<p>We provide secure digital services worldwide.</p>
-</div>
-
-<!-- LINKS -->
-<div>
-<h3>Useful Links</h3>
-<ul>
-<li>Home</li>
-<li>Bank Accounts</li>
-<li>Crypto Accounts</li>
-<li>Social Accounts</li>
-<li>Shop</li>
-<li>Payment Methods</li>
-</ul>
-</div>
-
-<!-- PAYMENT METHODS (NEW FIX) -->
-<div>
-<h3>Payment Methods</h3>
-<p>We accept:</p>
-
-<div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" width="50">
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" width="50">
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" width="50">
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/PayPal_2014_logo.svg" width="50">
-</div>
-
-</div>
-
-<!-- CONTACT -->
-<div>
-<h3>Contact Us</h3>
-<p>Telegram: @GermanyTopIt</p>
-<p>Email: germanytopit@gmail.com</p>
-<p>Office Time: 24/7</p>
-</div>
-
-</div>
-
-<div class="copyright">
-Copyright © 2026 Germany Top It
-</div>
-
-</footer>
 }
 </style>
 </head>
 
 <body>
 
-<!-- TOP BAR -->
 <div class="top-bar">
 <span>Telegram: @GermanyTopIt</span>
 <span>Email: germanytopit@gmail.com</span>
 </div>
 
-<!-- NAVBAR -->
 <nav class="navbar">
 
 <div class="logo-area">
-<img src="Your-paragraph-text.png" alt="Logo">
+<img src="Your-paragraph-text.png" alt="">
 <h2>Germany Top It</h2>
 </div>
 
@@ -249,58 +247,27 @@ Copyright © 2026 Germany Top It
 
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-<div>
+
+<div class="hero-text">
+
 <h1>Welcome To Germany Top It</h1>
+
 <p>
-Need verified social, bank, and crypto accounts with secure service worldwide.
+Need verified social accounts, bank accounts, crypto accounts
+and digital services? Germany Top It provides secure and trusted
+online account solutions for customers worldwide.
 </p>
+
 <button class="btn">VISIT SHOP</button>
-</div>
-</section>
 
-<!-- REVIEWS -->
-<section class="testimonials">
-
-<div class="review">
-<p>Team is very professional and friendly. Great service quality.</p>
-<h4>Jason Martin</h4>
-<span>Designer</span>
-</div>
-
-<div class="review">
-<p>Germany Top It is one of the best account service providers.</p>
-<h4>Barbara Smith</h4>
-<span>Designer</span>
-</div>
-
-<div class="review">
-<p>Great experience working with Germany Top It team.</p>
-<h4>Mark Sommers</h4>
-<span>Designer</span>
 </div>
 
 </section>
 
-<!-- FOOTER -->
 <footer>
+Telegram: @GermanyTopIt | Email: germanytopit@gmail.com
+</footer>
 
-<div class="footer-container">
-
-<div>
-<h3>About Us</h3>
-<p>We provide secure digital services worldwide.</p>
-</div>
-
-<div>
-<h3>Useful Links</h3>
-<ul>
-<li>Home</li>
-<li>Bank Accounts</li>
-<li>Crypto Accounts</li>
-<li>Social Accounts</li>
-<li>Shop</li>
-<li>Payment Methods</li>
-</ul>
-</div>
+</body>
+</html>
