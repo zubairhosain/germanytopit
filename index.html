@@ -37,7 +37,7 @@ max-width:1200px;
 margin:auto;
 }
 
-/* NAVBAR */
+/* NAVBAR (WHITE BAR) */
 .navbar{
 background:#fff;
 display:flex;
@@ -46,6 +46,7 @@ justify-content:space-between;
 padding:12px 10px;
 border:6px solid white;
 position:relative;
+z-index:1000;
 }
 
 /* LOGO */
@@ -85,34 +86,39 @@ padding:10px;
 color:#0066cc;
 }
 
-/* DROPDOWN FIXED FLOAT STYLE */
+/* DROPDOWN WRAPPER */
 .dropdown{
 position:relative;
 display:inline-block;
 }
 
+/* MAIN BUTTON */
 .dropdown > a{
 display:block;
 padding:10px;
 }
 
-/* FLOATING BOX */
+/* 🔥 IMPORTANT FIX: START EXACTLY FROM WHITE BAR */
 .dropdown-content{
 display:none;
 position:absolute;
-top:calc(100% + 8px);
+
+/* 👇 THIS IS THE MAIN FIX */
+top:100%;
 left:0;
 
 background:#fff;
 min-width:200px;
 
 border:1px solid #ddd;
-border-radius:8px;
+border-top:none; /* looks attached to white bar */
 
-box-shadow:0 10px 25px rgba(0,0,0,0.18);
-z-index:999;
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+
+z-index:9999;
 }
 
+/* ITEMS */
 .dropdown-content a{
 display:block;
 padding:10px 12px;
@@ -125,6 +131,7 @@ border-bottom:1px solid #f1f1f1;
 background:#f5f5f5;
 }
 
+/* SHOW */
 .dropdown:hover .dropdown-content{
 display:block;
 }
@@ -142,7 +149,7 @@ height:auto;
 cursor:pointer;
 }
 
-/* CART BADGE */
+/* BADGE */
 .cart-count{
 position:absolute;
 top:-6px;
@@ -162,8 +169,6 @@ color:#0066cc;
 border:2px solid #0066cc;
 border-radius:50%;
 background:#fff;
-
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* HERO */
