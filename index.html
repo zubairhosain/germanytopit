@@ -31,6 +31,21 @@ font-size:15px;
 color:white;
 }
 
+.top-left{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.top-item{
+display:flex;
+align-items:center;
+gap:6px;
+color:white;
+font-size:14px;
+text-decoration:none;
+}
+
 /* CONTAINER */
 .container{
 max-width:1200px;
@@ -96,14 +111,10 @@ display:block;
 padding:10px;
 }
 
-/* 🔥 MORE LOWER BORDER + GAP */
 .dropdown-content{
 display:none;
 position:absolute;
-
-/* 👇 MORE GAP (lower than before) */
-top:calc(100% + 20px);
-
+top:calc(100% + 25px);
 left:0;
 
 background:#fff;
@@ -118,7 +129,6 @@ z-index:9999;
 overflow:hidden;
 }
 
-/* ITEMS */
 .dropdown-content a{
 display:block;
 padding:10px 12px;
@@ -127,12 +137,10 @@ font-size:14px;
 border-bottom:1px solid #eee;
 }
 
-/* hover */
 .dropdown-content a:hover{
 background:#f2f2f2;
 }
 
-/* keep stable hover */
 .dropdown:hover .dropdown-content,
 .dropdown-content:hover{
 display:block;
@@ -151,7 +159,6 @@ height:auto;
 cursor:pointer;
 }
 
-/* 🔥 RED CART BADGE */
 .cart-count{
 position:absolute;
 top:-6px;
@@ -168,7 +175,7 @@ font-size:12px;
 font-weight:bold;
 
 color:#fff;
-background:red;   /* 🔥 changed to red */
+background:red;
 border-radius:50%;
 }
 
@@ -253,8 +260,33 @@ font-size:35px;
 
 <!-- TOP BAR -->
 <div class="top-bar">
-    <div>Trusted Global Service with Verified USA Accounts</div>
-    <div>@GlobalTopIt | Globaltopit@gmail.com</div>
+
+    <div class="top-left">
+
+        <!-- TELEGRAM -->
+        <a class="top-item" href="https://t.me/smmpvaexpertts" target="_blank">
+
+            <!-- Telegram SVG Icon -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                <path d="M9.04 16.47l-.39 5.52c.56 0 .8-.24 1.1-.54l2.6-2.5 5.4 3.97c.99.55 1.7.26 1.95-.92l3.55-16.7c.31-1.44-.52-2.01-1.48-1.65L1.4 9.5c-1.38.54-1.36 1.3-.24 1.65l5.6 1.75 12.98-8.17c.61-.38 1.17-.17.71.21z"/>
+            </svg>
+
+            @GlobalTopIt
+        </a>
+
+        <!-- EMAIL -->
+        <div class="top-item">
+
+            <!-- Email SVG Icon -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+
+            Globaltopit@gmail.com
+        </div>
+
+    </div>
+
 </div>
 
 <!-- NAVBAR -->
