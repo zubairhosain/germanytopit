@@ -115,10 +115,33 @@ display:block;
 }
 
 /* CART */
+.cart{
+position:relative;
+display:flex;
+align-items:center;
+}
+
 .cart img{
 width:35px;
 height:auto;
 cursor:pointer;
+}
+
+/* CART BADGE */
+.cart-count{
+position:absolute;
+top:-6px;
+right:-10px;
+background:red;
+color:white;
+font-size:12px;
+width:18px;
+height:18px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-weight:bold;
 }
 
 /* HERO */
@@ -253,6 +276,7 @@ font-size:35px;
 <!-- CART -->
 <div class="cart">
     <img src="add-to-cart.png" alt="Cart">
+    <span class="cart-count">0</span>
 </div>
 
 </div>
