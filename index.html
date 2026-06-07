@@ -45,6 +45,7 @@ align-items:center;
 justify-content:space-between;
 padding:12px 10px;
 border:6px solid white;
+position:relative;
 }
 
 /* LOGO */
@@ -77,6 +78,7 @@ align-items:center;
 text-decoration:none;
 color:#111;
 font-weight:600;
+padding:10px;
 }
 
 .menu a:hover{
@@ -89,28 +91,51 @@ position:relative;
 display:inline-block;
 }
 
+/* MAIN LINK */
+.dropdown > a{
+display:block;
+padding:10px;
+}
+
+/* 🔥 PERFECT DROPDOWN FIX (ATTACHED + SMALL GAP + NO CUT) */
 .dropdown-content{
 display:none;
 position:absolute;
-top:25px;
+
+/* white bar se small gap */
+top:calc(100% + 4px);
+left:0;
+
 background:#fff;
-min-width:160px;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
-z-index:10;
+min-width:200px;
+
+border:1px solid #ddd;
+border-radius:12px;
+
+box-shadow:0 10px 20px rgba(0,0,0,0.12);
+
+z-index:9999;
+overflow:hidden;
 }
 
+/* ITEMS */
 .dropdown-content a{
 display:block;
-padding:10px;
+padding:10px 12px;
 color:#000;
 font-size:14px;
+border-bottom:1px solid #eee;
+transition:0.2s;
 }
 
+/* hover */
 .dropdown-content a:hover{
 background:#f2f2f2;
 }
 
-.dropdown:hover .dropdown-content{
+/* 🔥 IMPORTANT: NO DISAPPEAR ISSUE FIX */
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover{
 display:block;
 }
 
@@ -132,16 +157,21 @@ cursor:pointer;
 position:absolute;
 top:-6px;
 right:-10px;
-background:red;
-color:white;
-font-size:12px;
-width:18px;
-height:18px;
+
+width:20px;
+height:20px;
+
 display:flex;
 align-items:center;
 justify-content:center;
-border-radius:50%;
+
+font-size:12px;
 font-weight:bold;
+
+color:#0066cc;
+border:2px solid #0066cc;
+border-radius:50%;
+background:#fff;
 }
 
 /* HERO */
@@ -282,6 +312,7 @@ font-size:35px;
 </div>
 
 </nav>
+
 <!-- HERO -->
 <section class="hero">
 <div class="hero-content">
