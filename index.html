@@ -116,17 +116,7 @@ position:relative;
 display:inline-block;
 }
 
-.dropdown > a{
-display:block;
-padding:10px;
-}
-
-/* DROPDOWN MENU */
-.dropdown{
-position:relative;
-display:inline-block;
-}
-
+/* MAIN LINK */
 .dropdown > a{
 display:block;
 padding:10px;
@@ -136,17 +126,17 @@ padding:10px;
 .dropdown-content{
 display:none;
 position:absolute;
-top:calc(100% + 25px);
+top:calc(100% + 15px);  /* একটু কম gap, smooth feel */
 left:0;
 
-background:#ffffff;
-min-width:220px;
+background:#fff;
+min-width:260px;   /* ঘর বড় করা হলো */
 
 border:1px solid #ddd;
-border-top:none;   /* top border removed */
-border-radius:0;   /* 4 corner sharp */
+border-top:none;
+border-radius:0;
 
-box-shadow:0 8px 18px rgba(0,0,0,0.10);
+box-shadow:0 8px 18px rgba(0,0,0,0.12);
 z-index:9999;
 }
 
@@ -155,33 +145,33 @@ z-index:9999;
 display:block;
 }
 
-/* GAP FIX (mouse problem fix) */
+/* IMPORTANT: hover gap fix (mouse গেলে না বন্ধ হয়) */
 .dropdown::after{
 content:"";
 position:absolute;
 top:100%;
 left:0;
 width:100%;
-height:25px;
+height:15px;
 background:transparent;
 }
 
 /* OPTIONS */
 .dropdown-content a{
 display:block;
-padding:12px 15px;
-
+padding:14px 18px;
 color:#000;
 font-size:14px;
 text-decoration:none;
-
 background:#fff;
-border-bottom:1px solid #eee;
+
+/* ❌ line remove */
+border-bottom:none;
 }
 
-/* hover effect */
+/* hover */
 .dropdown-content a:hover{
-background:#f5f5f5;
+background:#f2f2f2;
 }
 
 /* CART */
