@@ -20,13 +20,13 @@ background:#fff;
 color:#000;
 }
 
-/* TOP BAR (balanced size) */
+/* TOP BAR */
 .top-bar{
 background:#0066cc;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:14px 250px;  /* ঠিক balance করা হলো */
+padding:14px 250px;
 font-size:15px;
 color:white;
 border-bottom:none;
@@ -94,11 +94,16 @@ gap:20px;
 align-items:center;
 }
 
+/* FIX: ALL MENU NORMAL */
 .menu a{
 text-decoration:none;
 color:#111;
-font-weight:600;
+font-weight:400 !important;
 padding:10px;
+}
+
+.menu a:visited{
+font-weight:400 !important;
 }
 
 .menu a:hover{
@@ -114,14 +119,14 @@ display:inline-block;
 .dropdown > a{
 display:block;
 padding:10px;
-font-weight:400; /* MAIN CATEGORY NORMAL */
+font-weight:400;
 }
 
 /* DROPDOWN BOX */
 .dropdown-content{
 display:none;
 position:absolute;
-top:calc(100% + 25px);
+top:calc(100% + 15px);
 left:0;
 
 background:#fff;
@@ -147,7 +152,7 @@ position:absolute;
 top:100%;
 left:0;
 width:100%;
-height:25px;
+height:15px;
 background:transparent;
 }
 
@@ -156,8 +161,8 @@ background:transparent;
 display:block;
 padding:14px 18px;
 
-font-size:15px;   /* একটু কমানো হলো */
-font-weight:400 !important;  /* FORCE NORMAL (important fix) */
+font-size:15px;
+font-weight:400 !important;
 
 color:#000;
 text-decoration:none;
@@ -166,7 +171,6 @@ background:#fff;
 border-bottom:none;
 }
 
-/* hover */
 .dropdown-content a:hover{
 background:#f2f2f2;
 }
